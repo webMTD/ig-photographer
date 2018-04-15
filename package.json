@@ -13,10 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0",
-    "koa": "^2.3.0",
+    "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/bulma": "^1.0.3",
-    "@nuxtjs/axios": "^5.0.0"
+    "koa": "^2.3.0",
+    "npm": "^5.8.0",
+    "nuxt": "^1.0.0"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",
