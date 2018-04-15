@@ -1,5 +1,41 @@
 <template>
+<<<<<<< HEAD
   <div class="container">
+=======
+  <div>
+    <nav class="navbar is-fixed-bottom is-light">
+      <div class="container">
+      <div class="navbar-menu" id="nav-menu">
+          <div class="navbar-start">
+          </div>
+          <nuxt-link to="/portfolio" class="navbar-item">
+            Портфолио
+          </nuxt-link>
+          <nuxt-link to="/blog" class="navbar-item">
+            Блог
+          </nuxt-link>
+          <nuxt-link to="/faq" class="navbar-item">
+            ЧаВо
+          </nuxt-link>
+          <nuxt-link to="/contacts" class="navbar-item">
+            Контакты
+          </nuxt-link>
+          <div class="navbar-end">
+          </div>
+        </div>
+        <div class="navbar-brand is-white">
+          <a role="button" class="navbar-burger burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true">
+            </span>
+            <span aria-hidden="true">
+            </span>
+            <span aria-hidden="true">
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+>>>>>>> 51757650fce48a37a40826e4f2b63e47dccf4737
     <nuxt/>
     <nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
       <div class="navbar-menu  is-centered" :class="{'is-active': showNav} ">
@@ -25,6 +61,7 @@
   </div>
 </template>
 
+
 <style>
 html
 {
@@ -42,7 +79,10 @@ html
   box-sizing: border-box;
   margin: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 51757650fce48a37a40826e4f2b63e47dccf4737
 </style>
 
 <script>
