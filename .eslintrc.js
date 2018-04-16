@@ -18,8 +18,4 @@ module.exports = {
     ],
     // add your custom rules here
     rules: {}
-<<<<<<< HEAD
   }
-=======
-  }
->>>>>>> 51757650fce48a37a40826e4f2b63e47dccf4737
