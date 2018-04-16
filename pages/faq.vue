@@ -1,5 +1,5 @@
 <template>
-    <section class="container">
+    <section>
         <div>F.A.Q.</div>
     </section>
 </template>

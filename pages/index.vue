@@ -5,17 +5,24 @@
     <div class="photo-category studio-shot"></div>
     <div class="photo-category kid-shot"></div>
   </div>-->
-  <div>
-    <div></div>
-  <div class="columns is-desktop">
-    <div class="column is-one-half-desktop"></div>
-    <div class="column is-desktop"></div>
+  <section>
+  <div class="columns is-centered">
+    <nuxt-link  class="column is-half-desktop is-three-quarters-touch wedding-shot" to="/portfolio/wedding-shot">
+      <img src="/wedding-shot.jpg">
+    </nuxt-link>
+    <nuxt-link  class="column is-half-desktop is-three-quarters-touch studio-shot" to="/portfolio/studio-shot">
+      <img src="/studio-shot.jpg">
+    </nuxt-link>
   </div>
-  <div class="columns is-desktop">
-    <div class="column is-one-half-desktop"></div>
-    <div class="column is-desktop"></div>
+  <div class="columns is-centered">
+    <nuxt-link  class="column is-half-desktop is-three-quarters-touch family-shot" to="/portfolio/family-shot">
+      <img src="/family-shot.jpg">
+    </nuxt-link>
+    <nuxt-link  class="column is-half-desktop is-three-quarters-touch kid-shot" to="/portfolio/kid-shot">
+      <img src="/kid-shot.jpg">
+    </nuxt-link>
   </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -25,13 +32,33 @@ export default{
 </script>
 
 <style>
-.columns {
-  height: 50vh;
+
+
+/*
+.wedding-shot {
+  background-image: url("/wedding-shot.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.column {
-  height: 100%;
-  border: 3px dashed red;
+
+.studio-shot {
+  background-image: url("/studio-shot.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.kid-shot {
+  background-image: url("/kid-shot.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.family-shot {
+  background-image: url("/family-shot.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
 /*
 .container {
   min-height: 100vh;

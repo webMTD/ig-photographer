@@ -1,5 +1,5 @@
 <template>
     <section>
-        <div>Blog</div>
+        <div>Family-shot</div>
     </section>
 </template>

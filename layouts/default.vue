@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
+  <div>
     <nuxt/>
-    <nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-bottom is-centered" role="navigation" aria-label="main navigation">
       <div class="navbar-menu  is-centered" :class="{'is-active': showNav} ">
         <div class="navbar-start">
         </div>
-          <nuxt-link class="navbar-item" to="/portfolio">Portfolio</nuxt-link>
+          <nuxt-link class="navbar-item" to="/portfolio/">Portfolio</nuxt-link>
           <nuxt-link class="navbar-item" to="/blog">Blog</nuxt-link>
           <nuxt-link class="navbar-item" to="/">Home</nuxt-link>
           <nuxt-link class="navbar-item" to="/faq">F.A.Q.</nuxt-link>
@@ -43,6 +43,7 @@ html
   box-sizing: border-box;
   margin: 0;
 }
+
 </style>
 
 <script>
