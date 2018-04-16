@@ -1,12 +1,8 @@
 # Dependencies
 node_modules
-<<<<<<< HEAD
-package-lock.json
-=======
 package-lock.json
 
 # Logs
 *.log
 npm-debug.log*
 
->>>>>>> 51757650fce48a37a40826e4f2b63e47dccf4737
