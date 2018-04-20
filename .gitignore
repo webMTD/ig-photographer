@@ -1,16 +1,10 @@
 # Dependencies
 node_modules
-<<<<<<< HEAD
+
+# Nuxt build
 .nuxt
-=======
-package-lock.json
->>>>>>> f17cbb6b82fd94598dcbc9460c9b0cf2ccac97d1
 
 # Logs
 *.log
 npm-debug.log*
 
-<<<<<<< HEAD
-package-lock.json
-=======
->>>>>>> f17cbb6b82fd94598dcbc9460c9b0cf2ccac97d1
