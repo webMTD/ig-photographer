@@ -2,7 +2,7 @@
   <div>
     <nuxt/>
     <nav class="navbar is-fixed-bottom is-centered" role="navigation" aria-label="main navigation">
-      <div class="navbar-menu  is-centered" :class="{'is-active': showNav} ">
+      <div class="navbar-menu  is-centered" v-bind:class="{'is-active': showNav} ">
         <div class="navbar-start">
         </div>
           <nuxt-link class="navbar-item" to="/portfolio/">Portfolio</nuxt-link>
@@ -14,8 +14,7 @@
         </div>
       </div>
       <div class="navbar-brand">
-        <a class="navbar-item" href="/"></a>
-        <button class="button navbar-burger" @click="showNav = !showNav">
+        <button class="button navbar-burger" v-on:click="showNav = !showNav">
           <span></span>
           <span></span>
           <span></span>

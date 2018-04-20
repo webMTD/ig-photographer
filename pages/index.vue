@@ -1,26 +1,48 @@
 <template>
-  <!--<div class="container">
-    <div class="photo-category family-shot"></div>
-    <div class="photo-category wedding-shot"></div>
-    <div class="photo-category studio-shot"></div>
-    <div class="photo-category kid-shot"></div>
-  </div>-->
-  <section>
+  <section class="main-container section">
   <div class="columns is-centered">
-    <nuxt-link  class="column is-half-desktop is-three-quarters-touch wedding-shot" to="/portfolio/wedding-shot">
-      <img src="/wedding-shot.jpg">
-    </nuxt-link>
-    <nuxt-link  class="column is-half-desktop is-three-quarters-touch studio-shot" to="/portfolio/studio-shot">
-      <img src="/studio-shot.jpg">
-    </nuxt-link>
+    <div class="column image-menu-item wedding">
+      <nuxt-link to="/portfolio/wedding-shot">
+        <figure class="image is-16by9">
+          <div class="text-on-menu-item-image">
+            <p class="is-size-4">Свадебная фотография</p>
+          </div>
+          <img src="/ws.jpg">
+        </figure>
+      </nuxt-link>
+    </div>
+    <div  class="column image-menu-item studio">
+      <nuxt-link to="/portfolio/studio-shot">
+        <figure class="image is-16by9">
+          <div class="text-on-menu-item-image">
+            <p class="is-size-4">Студийная фотография</p>
+          </div>
+          <img src="/ss.jpg">
+        </figure>
+      </nuxt-link>
+    </div>
   </div>
   <div class="columns is-centered">
-    <nuxt-link  class="column is-half-desktop is-three-quarters-touch family-shot" to="/portfolio/family-shot">
-      <img src="/family-shot.jpg">
-    </nuxt-link>
-    <nuxt-link  class="column is-half-desktop is-three-quarters-touch kid-shot" to="/portfolio/kid-shot">
-      <img src="/kid-shot.jpg">
-    </nuxt-link>
+    <div class="column image-menu-item">
+      <nuxt-link to="/portfolio/family-shot">
+        <figure class="image is-16by9">
+          <div class="text-on-menu-item-image">
+            <p class="is-size-4">Семейная фотография</p>
+          </div>
+          <img src="/fs.jpg">
+        </figure>
+      </nuxt-link>
+    </div>
+    <div class="column image-menu-item kid" >
+      <nuxt-link to="/portfolio/kid-shot">
+        <figure class="image is-16by9">
+          <div class="text-on-menu-item-image">
+            <p class="is-size-4">Детская фотография</p>
+          </div>
+          <img src="/ks.jpg">
+        </figure>
+      </nuxt-link>
+    </div>
   </div>
   </section>
 </template>
@@ -29,89 +51,58 @@
 export default{
   layout: 'default'
 }
+
 </script>
 
 <style>
+.main-container {
+  overflow: hidden;
+}
 
 
 /*
-.wedding-shot {
-  background-image: url("/wedding-shot.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.image-menu-item::after {
+  display: none;
+  content: "";
 }
-
-.studio-shot {
-  background-image: url("/studio-shot.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.kid-shot {
-  background-image: url("/kid-shot.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.family-shot {
-  background-image: url("/family-shot.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-*/
-/*
-.container {
-  min-height: 100vh;
-  max-height: 100vh;
-  min-width: 100vw;
-  max-width: 100vw;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  vertical-align: center;
-  flex-wrap: no-wrap;
-}
-
-.photo-category {
-  min-width: 30%;
-  max-width: 30%;
-  min-height: 100vh;
-  transform: skew(-10deg);
-}
-
-.photo-category:hover {
-  filter: sepia(0.1);
-}
-
-.family-shot {
-  background-color:aqua;
-}
-
-.wedding-shot {
-  background-color: pink;
-  min-width: 27%;
-  max-width: 27%;
-}
-
-.studio-shot {
-  background-color: darkslateblue;
-  min-width: 27%;
-  max-width: 27%;
-}
-
-.kid-shot {
-  background-color: crimson;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+.image-menu-item:hover::after{
   display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
 }
+
 */
+.image-menu-item {
+  filter: sepia(1.1) hue-rotate(200deg);
+}
+
+.text-on-menu-item-image {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  width: 100%;
+  height: 15%;
+  top: 45%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-on-menu-item-image > p {
+  margin: 0;
+
+}
+
+.image-menu-item:hover, .image-menu-item:active {
+  filter: none;
+}
+
+.image-menu-item:hover .text-on-menu-item-image {
+  display: none;
+}
+
+
 
 </style>
 
