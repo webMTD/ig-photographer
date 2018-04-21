@@ -3,15 +3,13 @@
     <nuxt/>
     <nav class="navbar is-fixed-bottom is-centered" role="navigation" aria-label="main navigation">
       <div class="navbar-menu  is-centered" v-bind:class="{'is-active': showNav} ">
-        <div class="navbar-start">
-        </div>
-          <nuxt-link class="navbar-item" to="/portfolio/">Portfolio</nuxt-link>
-          <nuxt-link class="navbar-item" to="/blog">Blog</nuxt-link>
-          <nuxt-link class="navbar-item" to="/">Home</nuxt-link>
-          <nuxt-link class="navbar-item" to="/faq">F.A.Q.</nuxt-link>
-          <nuxt-link class="navbar-item" to="/contacts">Contacts</nuxt-link>
-        <div class="navbar-end">
-        </div>
+        <div class="navbar-start"></div>
+        <nuxt-link class="navbar-item" to="/portfolio/">Portfolio</nuxt-link>
+        <nuxt-link class="navbar-item" to="/blog">Blog</nuxt-link>
+        <nuxt-link class="navbar-item" to="/">Home</nuxt-link>
+        <nuxt-link class="navbar-item" to="/faq">F.A.Q.</nuxt-link>
+        <nuxt-link class="navbar-item" to="/contacts">Contacts</nuxt-link>
+        <div class="navbar-end"></div>
       </div>
       <div class="navbar-brand">
         <button class="button navbar-burger" v-on:click="showNav = !showNav">
@@ -26,6 +24,7 @@
 
 
 <style>
+@import "http://fonts.fontstorage.com/import/madeevolvesansevo.css";
 html
 {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -42,7 +41,10 @@ html
   box-sizing: border-box;
   margin: 0;
 }
-
+a {
+  font-family: 'MADE Evolve Sans EVO';
+  font-size: 24px;
+}
 </style>
 
 <script>
