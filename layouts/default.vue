@@ -2,7 +2,7 @@
   <div>
     <nuxt/>
     <nav class="navbar is-fixed-bottom is-centered" role="navigation" aria-label="main navigation">
-      <div class="navbar-menu  is-centered" v-bind:class="{'is-active': showNav} ">
+      <div class="navbar-menu is-centered" v-bind:class="{'is-active': showNav}">
         <div class="navbar-start"></div>
         <nuxt-link class="navbar-item" to="/portfolio/">Portfolio</nuxt-link>
         <nuxt-link class="navbar-item" to="/blog">Blog</nuxt-link>
