@@ -15,6 +15,7 @@ module.exports = {
     ], 
     script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' }
+      /*{ src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDDw1WWi3klGA42KTwSQ-0ggomnGrNdQ0U' }*/
     ],
     link: [
       { rel: 'stylesheet', href: 'http://fonts.fontstorage.com/import/madeevolvesansevo.css' },
@@ -39,6 +40,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~plugins/maps.js'
   ],
 
   /*
