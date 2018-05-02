@@ -15,6 +15,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/bulma": "^1.0.3",
+    "@nuxtjs/font-awesome": "^1.0.3",
     "koa": "^2.3.0",
     "npm": "^5.8.0",
     "nuxt": "^1.0.0",

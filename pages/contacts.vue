@@ -5,7 +5,7 @@
                 <GoogleMap></GoogleMap>
             </div>
             <div class="column is-half-desktop">
-                <p class="vcard">
+                <div class="vcard">
                     Адрес:<br>
                     <a href="tel:+19704760125">Зеленоград</a><br>
                     Телефон:<br>
@@ -13,11 +13,27 @@
                     Почта:<br>
                     <a href="mailto: maintattoo@gmail.com">ig@gmail.com</a><br>
                     Социальные сети:<br>
-                    <a href="https://vk.com/tattoo_main" class="url vk"></a>
-                    <a href="https://instagram.com/tattoo_main" class="url instagram"></a>
-                    <a href="https://facebook.com/tattoo_main" class="url fb"></a>
-                    <button class="button is-black">УМРИ</button>
-                </p>
+                    <p class="buttons">
+                        <a href="https://vk.com/pozarnayohrana" class="button url vk">
+                            <span class="icon">
+                                <i class="fa fa-vk"></i>
+                            </span>
+                        </a>
+                        <a href="https://vk.com/" class="button url fb">
+                            <span class="icon">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                        <a href="https://vk.com/" class="button url vk">
+                            <span class="icon">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </p>
+                    <p class="buttons">
+                        <button class="button is-black">ХОЧУ ФОТО</button>
+                    </p>
+                </div>
             </div>
       </div>
   </section>
@@ -39,13 +55,7 @@ p{
 a{
     color: lightseagreen;
 }
-.url {
-    margin: 20px;
-    padding: 2px;
-    width: 25px;
-    height: 25px;
-    box-shadow: 0 2px 2px black;
-}
+
 .column {
     margin-top: 2em;
 }
