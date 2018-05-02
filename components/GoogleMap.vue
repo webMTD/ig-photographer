@@ -9,7 +9,7 @@
         scaleControl: false,
         scrollwheel: false,
         streetViewControl: false}"
-    style="width: 45vw; height: 60vh">
+    style="width: 35vw; height: 45vh">
     <gmap-marker
       :key="index"
       v-for="(m, index) in markers"

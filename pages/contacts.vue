@@ -1,10 +1,10 @@
 <template>
     <section class="contacts section">
-        <div class="columns">
-            <div class="column gmap is-half-desktop">
+        <div class="columns is-multiline is-centered custom-order">
+            <div class="column is-half is-centered gmap">
                 <GoogleMap></GoogleMap>
             </div>
-            <div class="column is-half-desktop">
+            <div class="column is-one-quarter is-centered">
                 <div class="vcard">
                     Адрес:<br>
                     <a href="tel:+19704760125">Зеленоград</a><br>
@@ -55,7 +55,9 @@ p{
 a{
     color: lightseagreen;
 }
-
+.custom-order {
+    
+}
 .column {
     margin-top: 2em;
 }
