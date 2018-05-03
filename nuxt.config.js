@@ -15,6 +15,7 @@ module.exports = {
     ], 
     script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' }
+      /*{ src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDDw1WWi3klGA42KTwSQ-0ggomnGrNdQ0U' }*/
     ],
     link: [
       { rel: 'stylesheet', href: 'http://fonts.fontstorage.com/import/madeevolvesansevo.css' },
@@ -39,7 +40,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/global.js'
+    '~/plugins/global.js',
+    '~plugins/maps.js'
   ],
 
   /*
@@ -49,7 +51,8 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma'
+    '@nuxtjs/bulma',
+    '@nuxtjs/font-awesome'
   ],
 
   /*

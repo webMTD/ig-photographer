@@ -15,16 +15,23 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/bulma": "^1.0.3",
+    "@nuxtjs/font-awesome": "^1.0.3",
     "koa": "^2.3.0",
     "npm": "^5.8.0",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "vue-faq-accordion": "^1.0.1",
+    "vue2-google-maps": "^0.9.6",
+    "vue2-transitions": "^0.2.3"
   },
   "devDependencies": {
-    "cross-env": "^5.0.1",
     "babel-eslint": "^8.2.1",
+    "cross-env": "^5.0.1",
     "eslint": "^4.15.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
-    "nodemon": "^1.11.0"
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^7.0.1",
+    "vue-collapse": "^1.0.31"
   }
 }
