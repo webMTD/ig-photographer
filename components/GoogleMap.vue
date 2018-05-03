@@ -9,7 +9,7 @@
         scaleControl: false,
         scrollwheel: false,
         streetViewControl: false}"
-    style="width: 35vw; height: 45vh">
+    style="min-width: 15em; min-height: 10em; height: 20em">
     <gmap-marker
       :key="index"
       v-for="(m, index) in markers"
@@ -26,8 +26,6 @@
         center: {lat: 55.9818712, lng: 37.1733412},
         markers: [{
           position: {lat: 55.9818712, lng: 37.1733420}
-        }, {
-          position: {lat: 11.0, lng: 11.0}
         }]
       }
     },

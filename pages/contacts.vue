@@ -1,10 +1,10 @@
 <template>
-    <section class="contacts section">
-        <div class="columns is-multiline is-centered custom-order">
-            <div class="column is-half is-centered gmap">
+    <section class="contacts section section-padding is-centered">
+        <div class="container columns is-fluid">
+            <div class="column is-half-desktop is-centered is-11-mobile is-centered gmap">
                 <GoogleMap></GoogleMap>
             </div>
-            <div class="column is-one-quarter is-centered">
+            <div class="column is-half-desktop is-mobile is-centered is-centered">
                 <div class="vcard">
                     Адрес:<br>
                     <a href="tel:+19704760125">Зеленоград</a><br>
@@ -58,9 +58,8 @@ a{
 .custom-order {
     
 }
-.column {
-    margin-top: 2em;
-}
+
+
 .gmap > * {
      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
