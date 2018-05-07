@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import FaqItem from '~/components/FaqItem.vue'
+import AskItem from '~/components/AskItem.vue'
 
-Vue.component('FaqItem', FaqItem)
+Vue.component('item-ask', AskItem)

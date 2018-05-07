@@ -40,7 +40,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/global.js',
+    '~plugins/global.js',
     '~plugins/maps.js'
   ],
 
