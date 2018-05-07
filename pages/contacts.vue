@@ -1,10 +1,10 @@
 <template>
-    <section class="contacts section section-padding is-centered">
-        <div class="container columns is-fluid">
-            <div class="column is-half-desktop is-centered is-11-mobile is-centered gmap">
+    <section class="contacts section is-flex-tablet section-padding is-centered">
+        <div class="container contact-container columns">
+            <div class="column contact-part is-half-desktop is-11-mobile is-centered gmap">
                 <GoogleMap></GoogleMap>
             </div>
-            <div class="column is-half-desktop is-mobile is-centered is-centered">
+            <div class="column contact-part is-half-desktop is-mobile is-centered">
                 <div class="vcard">
                     Адрес:<br>
                     <a href="tel:+19704760125">Зеленоград</a><br>
@@ -36,8 +36,10 @@
                 </div>
             </div>
       </div>
+      <nuxt/>
   </section>
 </template>
+
 <script>
 import GoogleMap from '~/components/GoogleMap.vue'
 
@@ -55,8 +57,14 @@ p{
 a{
     color: lightseagreen;
 }
-.custom-order {
-    
+.contact-container {
+    max-height: 100vh;
+}
+
+.contacts {
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
 }
 
 
