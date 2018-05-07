@@ -9,7 +9,7 @@
         scaleControl: false,
         scrollwheel: false,
         streetViewControl: false}"
-    style="min-width: 15em; min-height: 10em; height: 20em">
+    style="min-width: 15em; min-height: 10em; height: 20em; max-height: 40em">
     <gmap-marker
       :key="index"
       v-for="(m, index) in markers"
