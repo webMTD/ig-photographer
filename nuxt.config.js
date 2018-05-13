@@ -66,6 +66,9 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    babel: {
+      presets: ['stage-2']
+    },
     postcss: {
       plugins: {
         'postcss-cssnext': {
