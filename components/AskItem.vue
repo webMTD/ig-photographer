@@ -1,26 +1,36 @@
 <template>
-    <div class="container">
-        <div class="container">
+        <div class="container faq-container">
             <ul v-if="asks.length">
-                <div
+                <article class="message"
                     v-for="ask in asks"
                     v-bind:key="ask.id"
                 >   
-                    <div class="columns is-centered is-mobile">
-                        <div v-on:click="ask.isShow=!ask.isShow" class="column is-11-touch is-half-desktop ask-container">
-                            <div>{{ ask.questionProperty }}</div>
+                        <div v-on:click="ask.isShow=!ask.isShow" class="message-header ask-container">
+                            <p>{{ ask.questionProperty }}</p>
+                            <button class="delete" aria-label="delete"></button>
                         </div>
-                    </div>
-                    <div class="columns is-centered is-mobile">
-                        <div v-show="ask.isShow" class="column is-11-touch is-half-desktop answer-container">
+                        
+                        <div v-show="ask.isShow" class="message-body answer-container">
                             <div>{{ ask.answerProperty }}</div>
                         </div>
-                    </div>
-                </div>
+                </article>
             </ul>
         </div>
-    </div>
+
 </template>
+
+<style>
+@import "http://fonts.fontstorage.com/import/madeevolvesansevo.css";
+
+.faq-container {
+    max-width: 600px;
+}
+
+.faq-container p {
+    font-size: 1.4em;
+    font-family: 'MADE Evolve Sans EVO';
+}
+</style>
 
 <script>
 export default {
