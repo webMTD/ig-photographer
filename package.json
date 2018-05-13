@@ -22,7 +22,7 @@
     "koa": "^2.3.0",
     "npm": "^5.10.0",
     "nuxt": "^1.0.0",
-    "vue-faq-accordion": "^1.0.1",
+    "vue-markdown": "^2.2.4",
     "vue2-google-maps": "^0.9.6",
     "vue2-transitions": "^0.2.3"
   },

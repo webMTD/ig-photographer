@@ -62,6 +62,7 @@ export default{
 }
 
 
+
 /*
 .image-menu-item::after {
   display: none;
@@ -73,8 +74,8 @@ export default{
 
 */
 .image-menu-item {
-  filter: sepia(1) hue-rotate(200deg);
-  transition: filter 0.4s;
+  filter: sepia(0.9);
+  transition: filter 0.5s;
 }
 
 .text-on-menu-item-image {
@@ -98,7 +99,14 @@ export default{
   margin: 0;
 
 }
+.main-container .columns {
+  display: flex;
+  max-height: 400px;
+}
 
+.main-container .column {
+  
+}
 .image-menu-item:hover, .image-menu-item:active {
   filter: grayscale(1);
   filter: none;
