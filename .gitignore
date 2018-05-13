@@ -3,8 +3,17 @@ node_modules
 
 # Nuxt build
 .nuxt
+dist
 
 # Logs
 *.log
 npm-debug.log*
+
+#firebase
+firebase
+.firebaserc
+firebase.json
+firestore.indexes.json
+firestore.rules
+storage.rules
 
