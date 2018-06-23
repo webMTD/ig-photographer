@@ -12,7 +12,6 @@
 
 <script>
 import AskItem from "~/components/AskItem.vue"
-import db from "~/firebase/init.js"
 
 
 export default {
@@ -20,7 +19,7 @@ export default {
     data () {
         return {
             asks: [
-            /*    {
+                {
                     id: 0,
                     questionProperty: 'Как забронировать Вас на свою дату?',
                     answerProperty: 'Чтобы забронировать дату, Вам нужно внести аванс в размере 2000р от общей стоимости и подписать договор.',
@@ -49,18 +48,9 @@ export default {
                     questionProperty: 'Сколько будут обрабатываться фотографии?',
                     answerProperty: 'Сроки обработки свадебных фотографий варьируются от 1,5 до 2 месяцев, в зависимости от занятости и месяца съемки.',
                     isShow: false
-                },*/
+                },
             ]
         }
     },
-    created(){
-        db.collection('FAQ').get()
-        .then(snapshot => {
-            snapshot.forEach(doc => {
-                let ask = doc.data()
-                this.asks.push(ask)
-            })
-        })
-    }
 }
 </script>
