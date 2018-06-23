@@ -7,11 +7,17 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    htmlAttrs: {
+			lang: 'ru-RU',
+			prefix: 'og: http://ogp.me/ns#'
+		},
+
+		title: '',
+		titleTemplate: 'IG Photographer :: %s',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' },
+      { hid: 'description', name: 'description', content: 'Фотограф Иван Гладышев. Профессиональная свадебная фотография, детская фотография, семейная фотография, студийная фотография. Москва, Зеленоград.' }
     ], 
     script: [
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' }
